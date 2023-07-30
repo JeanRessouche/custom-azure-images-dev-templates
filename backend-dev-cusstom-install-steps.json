@@ -8,6 +8,13 @@
   },
   {
     "type": "PowerShell",
+    "name": "Install Office 365",
+    "inline": [
+      "winget install -h -e --id Microsoft.365"
+    ]
+  },
+  {
+    "type": "PowerShell",
     "name": "Install Vscode",
     "inline": [
       "choco install -y vscode"
