@@ -1,0 +1,65 @@
+[
+  {
+    "type": "PowerShell",
+    "name": "Install Choco",
+    "inline": [
+      "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Vscode",
+    "inline": [
+      "choco install -y vscode"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install DBeaver",
+    "inline": [
+      "choco install -y dbeaver"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Insomnia",
+    "inline": [
+      "choco install -y insomnia-rest-api-client"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Fork",
+    "inline": [
+      "choco install -y git-fork"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Termius",
+    "inline": [
+      "choco install -y termius"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Filezilla",
+    "inline": [
+      "choco install -y filezilla"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Google Chrome",
+    "inline": [
+      "winget install -h -e --id Google.Chrome"
+    ]
+  },
+  {
+    "type": "PowerShell",
+    "name": "Install Firefox",
+    "inline": [
+      "winget install -h -e --id Mozilla.Firefox"
+    ]
+  }
+]
